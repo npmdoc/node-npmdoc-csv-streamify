@@ -1,9 +1,14 @@
-# api documentation for  [csv-streamify (v3.0.4)](https://github.com/klaemo/csv-stream#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-csv-streamify.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-csv-streamify) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-csv-streamify.svg)](https://travis-ci.org/npmdoc/node-npmdoc-csv-streamify)
+# npmdoc-csv-streamify
+
+#### api documentation for  [csv-streamify (v3.0.4)](https://github.com/klaemo/csv-stream#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-csv-streamify.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-csv-streamify) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-csv-streamify.svg)](https://travis-ci.org/npmdoc/node-npmdoc-csv-streamify)
+
 #### Streaming CSV Parser. Made entirely out of streams.
 
-[![NPM](https://nodei.co/npm/csv-streamify.png?downloads=true)](https://www.npmjs.com/package/csv-streamify)
+[![NPM](https://nodei.co/npm/csv-streamify.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/csv-streamify)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-csv-streamify/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-csv-streamify_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-csv-streamify/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-csv-streamify/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-csv-streamify/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-csv-streamify/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-csv-streamify/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-csv-streamify/build/screenCapture.npmPackageListing.svg)
 
@@ -57,13 +62,11 @@
     "main": "csv-streamify.js",
     "maintainers": [
         {
-            "name": "klaemo",
-            "email": "clemens.stolle@gmail.com"
+            "name": "klaemo"
         }
     ],
     "name": "csv-streamify",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/klaemo/csv-stream.git"
@@ -74,16 +77,6 @@
     "version": "3.0.4"
 }
 ```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module csv-streamify](#apidoc.module.csv-streamify)
-
-
-
-# <a name="apidoc.module.csv-streamify"></a>[module csv-streamify](#apidoc.module.csv-streamify)
 
 
 
