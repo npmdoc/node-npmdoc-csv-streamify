@@ -61,12 +61,64 @@
 
     <li class="apidocModuleLi"><a href="#apidoc.module.csv-streamify">module csv-streamify</a><ol>
 
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.csv-streamify.csv-streamify">
+            function <span class="apidocSignatureSpan"></span>csv-streamify
+            <span class="apidocSignatureSpan">(opts, cb)</span>
+            </a>
+
+        </li>
+
     </ol></li>
 
 </ol></div>
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.csv-streamify" id="apidoc.module.csv-streamify">module csv-streamify</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.csv-streamify.csv-streamify" id="apidoc.element.csv-streamify.csv-streamify">
+        function <span class="apidocSignatureSpan"></span>csv-streamify
+        <span class="apidocSignatureSpan">(opts, cb)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">csv-streamify = function (opts, cb) {
+  if (typeof opts === &#x27;function&#x27;) {
+    cb = opts
+    opts = {}
+  }
+  opts = opts || {}
+  if (typeof cb === &#x27;function&#x27;) opts.cb = cb
+
+  opts.delimiter = opts.delimiter || &#x27;,&#x27;
+  opts.newline = opts.newline || &#x27;\n&#x27;
+  opts.quote = opts.quote || &#x27;&#x22;&#x27;
+  opts.empty = opts.hasOwnProperty(&#x27;empty&#x27;) ? opts.empty : &#x27;&#x27;
+  opts.objectMode = opts.objectMode || false
+  opts.hasColumns = opts.columns || false
+
+  // state
+  var state = {
+    body: [],
+    lineNo: 0,
+    _isQuoted: false,
+    _prev: [],
+    _newlineDetected: false,
+    _line: [],
+    _field: &#x27;&#x27;,
+    _columns: []
+  }
+
+  return createParser(opts, state).on(&#x27;error&#x27;, function (err) {
+    if (opts.cb) cb(err)
+  })
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
 
 </div>
 
